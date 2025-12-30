@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sashika A. Wijesuriya - CV</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0f1115;
+      --card:#171a21;
+      --text:#e8eaf0;
+      --muted:#aab0c0;
+      --accent:#d83c3c;
+      --accent2:#e7d192;
+      --line:#2a2f3a;
+      --tag:#222836;
+    }
+
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, Arial, sans-serif;
+      background:linear-gradient(180deg, #0f1115, #0b0c10);
+      color:var(--text);
+      line-height:1.55;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:0 auto;
+      padding:40px 18px;
+    }
+
+    header{
+      background: radial-gradient(1200px 500px at 0% 0%, rgba(216,60,60,0.25), transparent 55%),
+                  radial-gradient(900px 400px at 100% 0%, rgba(231,209,146,0.18), transparent 55%);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:28px;
+      margin-bottom:22px;
+    }
+
+    .name{
+      font-size:2.1rem;
+      font-weight:800;
+      margin:0;
+      letter-spacing:-0.5px;
+    }
+
+    .tagline{
+      margin-top:6px;
+      display:inline-block;
+      color:var(--accent);
+      font-weight:600;
+      font-size:1rem;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1.6fr 1fr;
+      gap:18px;
+    }
+
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr;}
+      header{padding:22px;}
+    }
+
+    .card{
+      background:rgba(23,26,33,0.92);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:22px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    h2{
+      margin:0 0 14px 0;
+      font-size:1.25rem;
+      padding-bottom:10px;
+      border-bottom:1px solid var(--line);
+      color:var(--accent2);
+      letter-spacing:0.2px;
+    }
+
+    .contact-item{
+      margin:10px 0;
+      color:var(--muted);
+      font-size:0.95rem;
+    }
+
+    .contact-item a{
+      color:var(--text);
+      text-decoration:none;
+      border-bottom:1px dashed rgba(232,234,240,0.25);
+    }
+
+    .contact-item a:hover{
+      border-bottom:1px solid var(--accent);
+      color:var(--accent);
+    }
+
+    .section{
+      margin-bottom:22px;
+    }
+
+    .event{
+      margin:16px 0;
+      padding:14px;
+      border:1px solid rgba(42,47,58,0.9);
+      border-radius:14px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0));
+    }
+
+    .event-title{
+      font-weight:700;
+      font-size:1.02rem;
+      margin:0 0 4px 0;
+      color:var(--text);
+    }
+
+    .event-meta{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      font-size:0.9rem;
+      color:var(--muted);
+      margin-bottom:8px;
+    }
+
+    .event p{
+      margin:0;
+      color:var(--muted);
+      font-size:0.95rem;
+    }
+
+    ul{
+      margin:10px 0 0 18px;
+      padding:0;
+      color:var(--muted);
+    }
+
+    .tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:10px;
+    }
+
+    .tag{
+      background:var(--tag);
+      border:1px solid rgba(255,255,255,0.06);
+      padding:8px 10px;
+      border-radius:999px;
+      font-size:0.9rem;
+      color:var(--text);
+    }
+
+    .quote{
+      background:rgba(216,60,60,0.08);
+      border:1px solid rgba(216,60,60,0.25);
+      padding:16px;
+      border-radius:14px;
+      color:var(--text);
+      font-size:0.97rem;
+    }
+
+    .split-subtitle{
+      margin-top:12px;
+      font-weight:700;
+      color:var(--accent);
+      letter-spacing:0.2px;
+    }
+
+    .rating{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:10px;
+      padding:8px 0;
+      border-bottom:1px dashed rgba(255,255,255,0.08);
+      color:var(--muted);
+    }
+    .rating strong{color:var(--text);}
+
+    footer{
+      text-align:center;
+      padding:28px 0 10px 0;
+      color:rgba(170,176,192,0.7);
+      font-size:0.88rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <h1 class="name">Sashika A. Wijesuriya</h1>
+      <div class="tagline">Postgraduate</div>
+    </header>
+
+    <div class="grid">
+
+      <!-- LEFT COLUMN -->
+      <main class="card">
+
+        <section class="section">
+          <h2>Summary</h2>
+          <div class="quote">
+            I am a dedicated and ambitious student actively seeking summer internship / part-time opportunities where I can contribute to a dynamic and collaborative team environment. My goal is to gain valuable work experience that complements my academic pursuits, enhances my professional skills, and provides meaningful contributions to the organization.
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Experience</h2>
+
+          <div class="event">
+            <div class="event-title">Electronic Engineer — VisionX Engineering</div>
+            <div class="event-meta">
+              <span>Since Apr 2024</span>
+              <span>Victoria, Australia</span>
+            </div>
+            <p>Embedded system development with extensive experience in circuit design and layout.</p>
+          </div>
+
+          <div class="event">
+            <div class="event-title">Hardware Design Engineer — C3 Labs</div>
+            <div class="event-meta">
+              <span>Mar 2023 – Feb 2024</span>
+              <span>Colombo, Sri Lanka</span>
+            </div>
+            <p>Designed embedded systems incorporating E Ink displays, air quality sensors, load cells, WiFi, and GSM modules. Extensive experience in PCB design and layout.</p>
+          </div>
+
+          <div class="event">
+            <div class="event-title">Trainee — Bell Solutions (Pvt) Ltd</div>
+            <div class="event-meta">
+              <span>Sep 2021 – Mar 2022</span>
+              <span>Colombo, Sri Lanka</span>
+            </div>
+            <p>Installation, maintenance, and troubleshooting of PABX, firewall, and CCTV systems, ensuring performance and security.</p>
+          </div>
+
+        </section>
+
+        <section class="section">
+          <h2>Projects</h2>
+
+          <div class="event">
+            <div class="event-title">Enhancing User KNN-Based Collaborative Filtering with Adjusted Euclidean Distance</div>
+            <div class="event-meta">
+              <span>RMIT</span>
+            </div>
+            <p>Implemented enhanced collaborative filtering methods from experimental research papers, improving accuracy over traditional algorithms.</p>
+            <ul>
+              <li>Data science and algorithm development</li>
+              <li>Python programming</li>
+              <li>Data analysis and comparison</li>
+            </ul>
+          </div>
+
+          <div class="event">
+            <div class="event-title">ePaging Board</div>
+            <div class="event-meta">
+              <span>C3 Labs</span>
+            </div>
+            <p>Created using a 13.3” E Ink display and ESP32 MCU with an app to update information via Bluetooth.</p>
+            <ul>
+              <li>Developing programming libraries (Font, Graphics, etc.)</li>
+              <li>Bluetooth serial communication</li>
+              <li>Image data conversion</li>
+            </ul>
+          </div>
+
+          <div class="event">
+            <div class="event-title">AQM Home / Pro / x</div>
+            <div class="event-meta">
+              <span>C3 Labs</span>
+            </div>
+            <p>Indoor air quality monitoring: sensor data sent to an online server via WiFi or 4G and displayed.</p>
+            <ul>
+              <li>Programming air quality sensors</li>
+              <li>IoT with GSM modules / WiFi</li>
+              <li>Graphing techniques on E Ink displays</li>
+            </ul>
+          </div>
+
+          <div class="event">
+            <div class="event-title">Islanded Microgrid Benchmark</div>
+            <div class="event-meta">
+              <span>Fourth year — SLIIT</span>
+            </div>
+            <p>Focused on photovoltaic power generation; implemented MPPT and switch mode power supplies with simulation-based execution during lockdown.</p>
+            <ul>
+              <li>Research techniques</li>
+              <li>Testing and implementation of algorithms</li>
+              <li>Construction of switch mode power supplies</li>
+              <li>Microgrid simulation with generator + grid-following inverter modules</li>
+            </ul>
+          </div>
+
+          <div class="event">
+            <div class="event-title">Dr. DOTS — Line Following Robot</div>
+            <div class="event-meta">
+              <span>Second year — SLIIT</span>
+            </div>
+            <p>Robot followed a black path on white background using sensor inputs and motor control with fuzzy logic.</p>
+            <ul>
+              <li>Microcontrollers (PIC, ATmega328p)</li>
+              <li>Analog sensor reading</li>
+              <li>PWM motor control</li>
+              <li>Fuzzy logic implementation</li>
+            </ul>
+          </div>
+
+          <div class="event">
+            <div class="event-title">PABX Re-installation</div>
+            <div class="event-meta">
+              <span>Bell Solution Limited</span>
+            </div>
+            <p>PABX used for intercom systems; worked end-to-end troubleshooting from user devices to PABX software.</p>
+            <ul>
+              <li>Identifying issues from user end to PABX</li>
+              <li>Avaya IP Office software knowledge</li>
+            </ul>
+          </div>
+
+        </section>
+
+      </main>
+
+      <!-- RIGHT COLUMN -->
+      <aside class="card">
+
+        <section class="section">
+          <h2>Contact</h2>
+          <div class="contact-item">📧 <a href="mailto:sashikaawijesuriya@gmail.com">sashikaawijesuriya@gmail.com</a></div>
+          <div class="contact-item">📞 <a href="tel:+61475947359">+61 475 947 359</a></div>
+          <div class="contact-item">📍 Victoria, Australia</div>
+          <div class="contact-item">🏠 16 Woking St, Craigieburn VIC 3064</div>
+          <div class="contact-item">🔗 <a href="https://linkedin.com/in/sashikawijesuriya" target="_blank">linkedin.com/in/sashikawijesuriya</a></div>
+          <div class="contact-item">💻 <a href="https://github.com/SashikaWijesuriya" target="_blank">github.com/SashikaWijesuriya</a></div>
+        </section>
+
+        <section class="section">
+          <h2>Strengths</h2>
+
+          <div class="split-subtitle">Engineering</div>
+          <div class="tags">
+            <span class="tag">Electronics</span>
+            <span class="tag">Electrical</span>
+            <span class="tag">Embedded Systems</span>
+            <span class="tag">Automation</span>
+            <span class="tag">PLC</span>
+            <span class="tag">PCB Design</span>
+          </div>
+
+          <div class="split-subtitle">Programming</div>
+          <div class="tags">
+            <span class="tag">Java</span>
+            <span class="tag">Python</span>
+            <span class="tag">C++</span>
+            <span class="tag">C</span>
+            <span class="tag">Assembly</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">LaTeX</span>
+          </div>
+
+          <div class="split-subtitle">Design</div>
+          <div class="tags">
+            <span class="tag">Photoshop</span>
+            <span class="tag">Illustrator</span>
+            <span class="tag">Premiere Pro</span>
+            <span class="tag">Web Development</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Education</h2>
+
+          <div class="event">
+            <div class="event-title">Masters of Artificial Intelligence</div>
+            <div class="event-meta"><span>RMIT</span><span>Since Mar 2024</span></div>
+          </div>
+
+          <div class="event">
+            <div class="event-title">B.Sc. in Electrical & Electronic Engineering</div>
+            <div class="event-meta"><span>SLIIT</span><span>Feb 2019 – Dec 2022</span></div>
+          </div>
+
+          <div class="event">
+            <div class="event-title">Certificate in Leadership Program</div>
+            <div class="event-meta"><span>IUHS</span><span>Oct 2018 – Jan 2019</span></div>
+          </div>
+
+          <div class="event">
+            <div class="event-title">O/L & A/L — Ananda College, Colombo</div>
+            <div class="event-meta"><span>Jan 2005 – Aug 2018</span></div>
+            <p>A/L: 2 C’s and 1 S<br>O/L: 7 A’s and 2 B’s</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Languages</h2>
+          <div class="rating"><strong>English</strong> <span>★★★★★</span></div>
+          <div class="contact-item">IELTS: Speaking 8 | Listening 7.5 | Reading 7 | Writing 6</div>
+        </section>
+
+        <section class="section">
+          <h2>Referees</h2>
+
+          <div class="event">
+            <div class="event-title">Mr. Ransith Fernando</div>
+            <div class="event-meta"><span>Managing Director — Forestpin (Pvt) Ltd</span></div>
+            <p>
+              📧 <a href="mailto:ransith@forestpin.com">ransith@forestpin.com</a><br>
+              📞 <a href="tel:+94777489894">(+94) 77 748 9894</a><br>
+              🏠 40 Chitra Lane, Colombo 5
+            </p>
+          </div>
+
+          <div class="event">
+            <div class="event-title">Mr. Krishantha Gayan Perera</div>
+            <div class="event-meta"><span>General Manager — Bell Solutions (Pvt) Ltd</span></div>
+            <p>
+              📧 <a href="mailto:krishanthagp@bellsolutions.lk">krishanthagp@bellsolutions.lk</a><br>
+              📞 <a href="tel:+94727440186">(+94) 72 744 0186</a><br>
+              🏠 392 2A, Colombo 2
+            </p>
+          </div>
+        </section>
+
+      </aside>
+
+    </div>
+
+    <footer>
+      © <span id="year"></span> Sashika A. Wijesuriya — CV Website
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
